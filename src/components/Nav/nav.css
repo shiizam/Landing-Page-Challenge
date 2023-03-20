@@ -1,0 +1,97 @@
+.nav-bar{
+  display: flex;
+  position: relative;
+  z-index: 10;
+  background: var(--Light-Gray);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  height: 20px;
+}
+
+.nav-btn{
+  border: none;
+  background: transparent;
+}
+
+.nav-btn:hover{
+  cursor: pointer;
+}
+
+.nav-links{
+  position: absolute;
+  border-radius: 5px;
+  padding: 1rem 2rem 2rem;
+  text-align: center;
+  top: 90px;
+  left: 30px;
+  background: var(--Light-Gray);
+}
+
+.nav-links ul{
+  margin: 0;
+  padding: 1rem 6rem 0;
+}
+
+.nav-desktop-links{
+  display: none;
+}
+
+.nav-request-btn .request-btn{
+  display: none;
+}
+
+
+@media screen and (min-width: 900px){
+
+  .nav-bar{
+    padding-left: 7rem;
+  }
+
+  #mobile-nav-btn{
+    display: none;
+  }
+
+  .nav-desktop-links{
+    display: flex;
+    align-items: center;
+    color: var(--Grayish-Blue);
+    padding-left: 3rem;
+  }
+
+  .nav-desktop-links ul{
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .nav-desktop-links ul::after{
+    content: '';
+    display: block;
+    background: var(--request-btn-bg);
+    position: absolute;
+    height: 0.2rem;
+    right: -5px;
+    bottom: -5px;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .nav-desktop-links ul:hover{
+    color: var(--Dark-Blue);
+  }
+
+  .nav-desktop-links ul:hover::after{
+    opacity: 1;
+  }
+
+  .nav-request-btn .request-btn{
+    display: flex;
+    margin: 0;
+  }
+
+  .nav-desktop-links:hover,
+  .nav-request-btn:hover{
+    cursor: pointer;
+  }
+}

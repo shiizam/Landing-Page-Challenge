@@ -1,0 +1,85 @@
+.head-images{
+  height: 325px;
+  position: relative;
+  top: -50px;
+  padding-bottom: 2rem;
+  z-index: -1;
+}
+
+#mobile-background{
+  position: relative;
+  z-index: -1;
+}
+
+.phone-mockup{
+  position: absolute;
+  top: -82px;
+  left: 10px;
+  margin: 0 auto;
+  width: 350px;
+  height: 450px;
+}
+
+.head-container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 4rem;
+  text-align: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 900px){
+  header{
+    height: 623px;
+  }
+
+  .wrapper{
+    background: url('../../assets/Header/bg-intro-desktop.svg');
+    background-position: top -275px right -450px;
+    background-repeat: no-repeat;
+    background-color: var(--Light-Gray);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    height: 100%;
+  }
+
+  .head-images{
+    position: relative;
+    z-index: 1;
+  }
+
+  #mobile-background{
+    display: none;
+  }
+
+  .phone-mockup{
+    top: -60px;
+    left: 42px;
+    width: auto;
+    height: auto;
+  }
+
+  .head-container{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    align-self: center;
+    align-items: flex-start  ;
+    padding: 0 7rem;
+  }
+
+  .head-container h1{
+    font-size: 54px;
+  }
+
+  .head-container p{
+    font-size: 18px;
+  }
+
+  .head-container button{
+  justify-self: left;
+  }
+
+}

@@ -1,0 +1,42 @@
+.why-container{
+  background: var(--Light-Grayish-Blue);
+  padding:4rem 1rem 1rem;
+}
+
+.sub-sections{
+  padding: 2rem .5rem;
+}
+
+@media screen and (min-width: 900px){
+  .why-container{
+    text-align: left;
+    padding: 8rem 4rem 4rem 7rem;
+  }
+  
+  .why-heading{
+    width: 55%;
+  }
+
+  .why-container h1{
+    font-size: 45px;
+  }
+
+  .why-container p{
+    font-size: 1.125rem;
+  }
+
+  .sub-sections{
+    display: flex;
+  }
+
+  #online-banking,
+  #budgeting,
+  #onboarding,
+  #api{
+    padding-right: 2rem;
+  }
+
+
+
+
+}
